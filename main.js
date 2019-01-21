@@ -66,18 +66,6 @@ var comments = {
 
 function getCurrentPostComments ( postId ) {
     var res = [];
-    // for (i = 0; i < comments.length; i++) {
-    //     if (comments[i].postId == postId) {
-    //         for (j = 0; j < users.length; j++ ) {
-    //             if(comments[i].author == users[j].userId) {
-    //                 res.push({
-    //                     author: users[j].name,
-    //                     text: comments[i].text
-    //                 });
-    //             }
-    //         }
-    //     }
-    // }
 
     for (var i in comments) {
         if (comments[i].postId == postId) {
